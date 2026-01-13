@@ -123,8 +123,9 @@ class PotionListener implements Listener {
 
         if (players.isEmpty()) return;
 
-        PotionType base = e.getEntity().getBasePotionData().getType();
-        if (base != null && Utils.BAD_EFFECTS.contains(base.getEffectType())) {
+        // Check base potion type (1.21+ uses getBasePotionType())
+        PotionType base = e.getEntity().getBasePotionType();
+        if (base != null && base.getEffectType() != null && Utils.BAD_EFFECTS.contains(base.getEffectType())) {
             players.forEach(p -> {
                 if (PPVPPlugin.inst().pvp().pvpNegative(p.getUniqueId())) {
                     e.getAffectedEntities().remove(p);

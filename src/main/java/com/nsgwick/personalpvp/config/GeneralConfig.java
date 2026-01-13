@@ -60,9 +60,9 @@ public class GeneralConfig implements SettingsHolder {
     public static final Property<String>  ABAR_TIME_WORLD =
             newProperty(PFX_ACTIONBAR + "worldtime-in-world", "world");
     public static final Property<String> ABAR_PVP_ENABLED_PFX =
-            newProperty(PFX_ACTIONBAR + "pvp-enabled-color-prefix","<gradient:#b82a11:#d41c43>PVP: <aqua>Enabled</aqua></gradient>");
+            newProperty(PFX_ACTIONBAR + "pvp-enabled-color-prefix","<gradient:#b82a11:#d41c43>ᴘᴠᴘ: <aqua>ᴇɴᴀʙʟᴇᴅ</aqua></gradient>");
     public static final Property<String> ABAR_PVP_DISABLED_PFX =
-            newProperty(PFX_ACTIONBAR + "pvp-disabled-color-prefix","<gradient:#d41c43:#b82a11>PVP: <green>Disabled</green></gradient>");
+            newProperty(PFX_ACTIONBAR + "pvp-disabled-color-prefix","<gradient:#d41c43:#b82a11>ᴘᴠᴘ: <green>ᴅɪsᴀʙʟᴇᴅ</green></gradient>");
 
     public static final Property<Integer> CMD_PVPTOGGLE_COOLDOWN =
             newProperty(PFX_CMD_SETTINGS + PFX_PVP_TOGGLE + "cooldown", 3);
@@ -84,21 +84,21 @@ public class GeneralConfig implements SettingsHolder {
     public static final Property<Boolean> CMD_PVPTOGGLE_LOG_EVENTS_TO_CONSOLE =
             newProperty(PFX_CMD_SETTINGS + PFX_PVP_TOGGLE + "log-pvp-toggle-events-to-console", false);
     public static final Property<String> CMD_PVPTOGGLELOG_CONSOLE_FORMAT =
-            newProperty(PFX_CMD_SETTINGS + PFX_PVP_TOGGLE + "console-format", "<pvpstatus> PVP for <name>.");
+            newProperty(PFX_CMD_SETTINGS + PFX_PVP_TOGGLE + "console-format", "<pvpstatus> ᴘᴠᴘ ғᴏʀ <name>.");
     public static final Property<String> CMD_PVPTOGGLELOG_CONSOLE__PVP_ENABLED_PFX =
-            newProperty(PFX_ACTIONBAR + "pvp-enabled-console-prefix","<aqua>Enabled");
+            newProperty(PFX_ACTIONBAR + "pvp-enabled-console-prefix","<aqua>ᴇɴᴀʙʟᴇᴅ");
     public static final Property<String> CMD_PVPTOGGLELOG_CONSOLE__PVP_DISABLED_PFX =
-            newProperty(PFX_ACTIONBAR + "pvp-disabled-console-prefix","<green>Disabled");
+            newProperty(PFX_ACTIONBAR + "pvp-disabled-console-prefix","<green>ᴅɪsᴀʙʟᴇᴅ");
 
     public static final Property<List<String>> CMD_PVPCTRL_PERSONAL_LINES =
             newListProperty(PFX_CMD_SETTINGS + PFX_PVP_CONTROL + "personal-lines", Arrays.asList(
-                    "<green><click:run_command:/pvp control toggleme><gradient:gray:white><bold>TOGGLE PVP</bold></gradient></click><green>]",
-                    "<green>[<click:run_command:/pvp control mystatus><gradient:white:gray><bold>GET PVP STATUS</bold></gradient></click><green>]",
-                    "<green>[<click:run_command:/pvp togglebar><gradient:gray:white><bold>TOGGLE ACTIONBAR VISIBILITY</bold></gradient></click><green>"
+                    "<green>[<click:run_command:/pvp control toggleme><gradient:gray:white><bold>ᴛᴏɢɢʟᴇ ᴘᴠᴘ</bold></gradient></click><green>]",
+                    "<green>[<click:run_command:/pvp control mystatus><gradient:white:gray><bold>ɢᴇᴛ ᴘᴠᴘ sᴛᴀᴛᴜs</bold></gradient></click><green>]",
+                    "<green>[<click:run_command:/pvp togglebar><gradient:gray:white><bold>ᴛᴏɢɢʟᴇ ᴀᴄᴛɪᴏɴʙᴀʀ ᴠɪsɪʙɪʟɪᴛʏ</bold></gradient></click><green>]"
             ));
     public static final Property<List<String>> CMD_PVPCTRL_LINES =
             newListProperty(PFX_CMD_SETTINGS + PFX_PVP_CONTROL + "lines", List.of(
-                    "<green><click:suggest_command:/pvp control resetglobal><hover:show_text:'<aqua>Reset offline players as well as online players.'><gradient:green:aqua><bold>FULL</bold></gradient> <gradient:aqua:green><bold>RESET</bold></gradient></hover></click><green>"));
+                    "<green>[<click:suggest_command:/pvp control resetglobal><hover:show_text:'<aqua>ʀᴇsᴇᴛ ᴏғғʟɪɴᴇ ᴘʟᴀʏᴇʀs ᴀs ᴡᴇʟʟ ᴀs ᴏɴʟɪɴᴇ ᴘʟᴀʏᴇʀs.'><gradient:green:aqua><bold>ғᴜʟʟ</bold></gradient> <gradient:aqua:green><bold>ʀᴇsᴇᴛ</bold></gradient></hover></click><green>]"));
 
     public static final Property<Boolean> ENABLE_PVP_ALERT =
             newProperty("notifications.enable-pvp-alert", true);
