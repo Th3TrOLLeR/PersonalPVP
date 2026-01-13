@@ -66,7 +66,7 @@ public class PersonalPVPExpansion extends PlaceholderExpansion {
 
         // %personalpvp_status_colored%
         if (params.equalsIgnoreCase("status_colored")) {
-            return plugin.pvp().pvpPositive(player.getUniqueId()) ? "§aEnabled" : "§cDisabled";
+            return plugin.pvp().pvpPositive(player.getUniqueId()) ? "§aᴇɴᴀʙʟᴇᴅ" : "§cᴅɪsᴀʙʟᴇᴅ";
         }
 
         // %personalpvp_locked%

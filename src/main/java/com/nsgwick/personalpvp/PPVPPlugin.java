@@ -140,6 +140,14 @@ public final class PPVPPlugin extends JavaPlugin {
         new Listeners(this);
 
         /*
+        Register PlaceholderAPI expansion if PlaceholderAPI is present.
+         */
+        if (getServer().getPluginManager().getPlugin("PlaceholderAPI") != null) {
+            new PersonalPVPExpansion(this).register();
+            this.log.info("PlaceholderAPI expansion registered.");
+        }
+
+        /*
         Send startup information to the console.
          */
         this.log.info("Default PvP setting: "
